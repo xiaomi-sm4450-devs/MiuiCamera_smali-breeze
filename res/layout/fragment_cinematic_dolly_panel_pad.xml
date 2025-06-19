@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cinematic_dolly_panel_layout" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/cinematic_dolly_operation_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/cinematic_dolly_operation_panel" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="@dimen/cinematic_dolly_op_panel_width_pad" android:layout_height="fill_parent" android:layout_marginStart="@dimen/cinematic_dolly_op_panel_rv_item_width">
+            <LinearLayout android:orientation="vertical" android:id="@id/operate_scope" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/scope_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/accessibility_cinematic_dolly_zoom_scope" android:layout_weight="1.0" />
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/scope_value" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:id="@id/cinematic_dolly_panel_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/cinematic_dolly_panel_divider" android:rotation="90.0" android:importantForAccessibility="no" />
+            <LinearLayout android:orientation="vertical" android:id="@id/operate_speed" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/speed_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/accessibility_cinematic_dolly_zoom_speed" android:layout_weight="1.0" />
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/speed_value" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/scope_adjust_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="top" android:id="@id/scope_adjust_adverse_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vector_cinematic_dolly_scope_adverse" android:scaleType="fitCenter" android:contentDescription="@string/accessibility_cinematic_dolly_zoom_direction_switch" android:layout_marginStart="@dimen/cinematic_dolly_zoom_adjust_left_margin_pad" />
+            <com.android.camera.ui.HorizontalScopeZoomView android:id="@id/scope_adjust_view" android:layout_width="@dimen/cinematic_dolly_zoom_adjust_width_pad" android:layout_height="@dimen/cinematic_dolly_zoom_adjust_height_pad" android:layout_marginTop="@dimen/cinematic_dolly_zoom_adjust_right_margin" android:layout_marginBottom="@dimen/cinematic_dolly_zoom_adjust_right_margin" android:layout_marginStart="@dimen/cinematic_dolly_zoom_adjust_left_margin_pad" app:isVertical="true" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="136.35999dip">
+            <miuix.recyclerview.widget.RecyclerView android:gravity="center" android:layout_gravity="center" android:id="@id/speed_adjust_view" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cinematic_dolly_panel_title_rv_bottom_margin">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@id/cinematic_dolly_rv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="start|bottom|center" android:layout_width="wrap_content" android:layout_height="@dimen/cinematic_dolly_panel_title_height">
+        <TextView android:textSize="@dimen/mode_select_item_text_size" android:textColor="@color/withe_cv" android:gravity="center" android:id="@id/cinematic_dolly_panel_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cinematic_panel_title" android:importantForAccessibility="no" />
+    </LinearLayout>
+</FrameLayout>

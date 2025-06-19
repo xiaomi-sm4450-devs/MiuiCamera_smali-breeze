@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/mode_item" android:layout_width="fill_parent" android:layout_height="@dimen/mm_mode_new_edit_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/mode_icon" android:layout_width="@dimen/mm_mode_new_icon_size" android:layout_height="@dimen/mm_mode_new_icon_size" android:contentDescription="@null" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.android.camera.ui.AdaptiveMarqueeTextView android:textSize="@dimen/mm_mode_item_text_size" android:textColor="@color/mm_mode_item_name_color" android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:id="@id/mode_name" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/mode_marquee_max_width" android:maxLines="3" android:importantForAccessibility="no" android:breakStrategy="balanced" android:fallbackLineSpacing="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:maxFontScale="1.0" app:minFontScale="1.0" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/mode_download_icon" android:layout_width="@dimen/mm_mode_new_download_icon_size" android:layout_height="@dimen/mm_mode_new_download_icon_size" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/mode_name" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

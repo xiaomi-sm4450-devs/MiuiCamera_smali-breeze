@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cvtype_btn_select_marginbottom">83.63599dip</dimen>
+    <dimen name="cvtype_hint_viewpager_height">510.53906dip</dimen>
+    <dimen name="cvtype_hint_viewpager_marginbottom">56.0dip</dimen>
+    <dimen name="cvtype_hint_viewpager_width">327.26562dip</dimen>
+    <dimen name="cvtype_item_card_height">436.35938dip</dimen>
+    <dimen name="extra_top_bar_horizontal_padding_left">20.362976dip</dimen>
+    <dimen name="laptop_detail_top">165.22dip</dimen>
+    <dimen name="laptop_detail_width">380.0dip</dimen>
+</resources>

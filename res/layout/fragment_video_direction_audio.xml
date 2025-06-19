@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/audio_gain_slider_parent" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/slide_tip_textsize" android:textStyle="normal" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/audio_gain_slider_tip" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/zoom_slide_layout_height" android:layout_marginBottom="@dimen/slide_height_mm" android:singleLine="true" />
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/audio_gain_slider_view_parent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.android.camera2.compat.theme.custom.mm.beauty.ZoomViewMM android:id="@id/audio_gain_slider_view" android:layout_width="fill_parent" android:layout_height="@dimen/slide_height_mm" />
+        </LinearLayout>
+    </FrameLayout>
+    <miuix.recyclerview.widget.RecyclerView android:layout_gravity="bottom|center" android:id="@id/direction_audio_type_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

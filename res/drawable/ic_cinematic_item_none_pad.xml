@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/ambilight_description_item_content_none" android:width="@dimen/cinematic_dolly_op_panel_rv_item_none_width_pad" android:viewportWidth="276.0" android:viewportHeight="170.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ff000000" android:pathData="M0,11.02C0,4.93 4.93,0 11.02,0H264.98C271.07,0 276,4.93 276,11.02V158.98C276,165.07 271.07,170 264.98,170H11.02C4.93,170 0,165.07 0,158.98V11.02Z" android:fillAlpha="0.3" />
+    <path android:fillColor="#00000000" android:pathData="M137.82,61.99C150.75,61.99 161.23,72.47 161.23,85.41C161.23,98.34 150.75,108.83 137.82,108.83C124.88,108.83 114.4,98.34 114.4,85.41C114.4,72.47 124.88,61.99 137.82,61.99Z" android:strokeColor="#ffffffff" android:strokeWidth="4.13265" />
+    <path android:fillColor="#00000000" android:pathData="M122.42,70.01L153.59,101.18" android:strokeColor="#ffffffff" android:strokeWidth="4.13265" android:strokeLineCap="round" />
+</vector>

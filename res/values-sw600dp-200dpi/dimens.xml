@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="beauty_process_width_mm">60.0dip</dimen>
+    <dimen name="beauty_slider_view_width">75.75998dip</dimen>
+    <dimen name="bokeh_line_selected_width_cv">2.0999756dip</dimen>
+    <dimen name="pad_beauty_root_layout_margin_left_portrait">10.0dip</dimen>
+    <dimen name="slide_line_height_mm">13.179993dip</dimen>
+    <dimen name="slide_line_select_height_mm">27.0dip</dimen>
+    <dimen name="v6_setting_status_bar_textSize">140.0sp</dimen>
+    <dimen name="zoom_ratio_translate_x_horizontal">86.72998dip</dimen>
+    <dimen name="zoom_ratio_translate_x_vertical">20.619995dip</dimen>
+</resources>
